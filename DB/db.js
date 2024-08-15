@@ -4,11 +4,11 @@ require('dotenv').config();
 
 const uri = process.env.MY_DB
 
-const clientOptions = { serverApi: { version: '1', strict: true, deprecationErrors: true } };
+
 
 async function connectDB() {
     try {
-      await mongoose.connect(uri, clientOptions);
+      await mongoose.connect(uri);
       console.log("Connected to MongoDB successfully!");
     } catch (error) {
       console.error("Error connecting to MongoDB:", error);
