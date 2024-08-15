@@ -31,11 +31,11 @@ const products = require("../Model/productModel");
 
   // Sorting
   const sortOption = {
-    'LowToHigh': { price: 1 },        // Ascending order by price
-    'HignToLow': { price: -1 },       // Descending order by price
-    'NewtoOld': { creationDate: -1 }, // Descending order by creation date
-    'OldtoNew': { creationDate: 1 },  // Ascending order by creation date
-}[sort] || {}; // Default to an empty object if no sort option is provided
+    'LowToHigh': { price: 1 },       
+    'HignToLow': { price: -1 },       
+    'NewtoOld': { creationDate: -1 }, 
+    'OldtoNew': { creationDate: 1 },   
+    }[sort] || {}; // Default to an empty object if no sort option is provided
 
 
     try {
