@@ -3,8 +3,6 @@ const { allPro } = require('../Controller/ProductController');
 
 const router = express.Router()
 
-
-
 router.get('/allProducts', allPro);
 
 
