@@ -34,7 +34,6 @@ const productsModel = new mongoose.Schema({
         min: [1, "minimum price of the product should be 1"],
         max: [5, "minimum price of the product should be 5"]
       }
-     
   })
 
   //product model
