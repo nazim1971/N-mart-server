@@ -17,7 +17,7 @@ const productsModel = new mongoose.Schema({
     description:{
       type: String,
       required: true,
-      minlength: [4, "minimum length of product should be 4"],
+      minlength: [5, "minimum length of product should be 5"],
       maxlength: [100, "maximum length of product should be 100"]
     },
     price:{
