@@ -29,12 +29,7 @@ const productsModel = new mongoose.Schema({
         required: true,
         min: [1, "minimum price of the product should be 1"],
         max: [5, "minimum price of the product should be 5"]
-      },
-     
-    createdAt: {
-        type: Date,
-        default: Date.now
-    }
+      }
   })
 
   //product model
