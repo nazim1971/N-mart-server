@@ -24,12 +24,17 @@ const productsModel = new mongoose.Schema({
         type: Number,
         required: true,
       },
+      category: {
+        type: String,
+        required: [true, "Product category is required"],
+    },
     rating: {
         type: Number,
         required: true,
         min: [1, "minimum price of the product should be 1"],
         max: [5, "minimum price of the product should be 5"]
       }
+     
   })
 
   //product model
