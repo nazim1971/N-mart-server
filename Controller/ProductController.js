@@ -5,7 +5,7 @@ const products = require("../Model/productModel");
    
   const allPro = async(req,res)=>{
 
-    const { category, minPrice, maxPrice, sort, search, brand, page=1, limit=10 } = req.query;
+    const { category, minPrice, maxPrice, sort, search, brand, page=1, limit=9 } = req.query;
     let query = {};
 
  // Search functionality (case-insensitive)
